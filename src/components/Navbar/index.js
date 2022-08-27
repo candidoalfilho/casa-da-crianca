@@ -15,7 +15,13 @@ const Navbar = () => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="about"></NavLinks>
+                        <NavLinks to="donate">Contribua</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="about">Nossa missão</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="contact">Contato</NavLinks>
                     </NavItem>
                 </NavMenu>
             </NavbarContainer>

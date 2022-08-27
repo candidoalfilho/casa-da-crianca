@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { Link as LinkR } from 'react-router-dom'
-import { Link as LinkS } from 'react-scroll'
+import styled from 'styled-components';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
     background: #FFD500;
@@ -8,7 +8,7 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1re,;
+    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -20,7 +20,7 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
     display: flex;
-    justify-content: space-betweern;
+    justify-content: space-between;
     height: 80px;
     z-index: 1;
     width: 100%;
@@ -52,6 +52,7 @@ display:none;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    color: #000;
 }
 `
 
@@ -61,6 +62,9 @@ export const NavMenu = styled.ul`
     list-style: none;
     text-align: center;
     margin-right: -22px;
+    font-family: "Arial";
+    font-size: 1.3rem;
+    font-weight: bold;
 
     @media screen and (max-width: 768px) {
         display:none;
@@ -69,16 +73,18 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 80px;
+    
 `
 
 export const NavLinks = styled(LinkS)`
-    color: #fff;
-    dispay: flex;
+    color: #000;
+    display: flex;
     align-items:center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    font-family: "Arial";
 
     &.active {
         border-bottom: 3px solid #01bf71;
