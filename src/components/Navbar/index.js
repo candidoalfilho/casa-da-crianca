@@ -1,10 +1,20 @@
 import React from 'react';
 import {FaBars} from 'react-icons/fa';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
+import '../../App.css'
+import {Nav, 
+    NavbarContainer, 
+    NavLogo, 
+    MobileIcon, 
+    NavMenu, 
+    NavItem, 
+    NavLinks,
+    NavBtn,
+    NavBtnLink} from './NavbarElements';
 
 const Navbar = () => {
   return (
     <>
+    
         <Nav>
             <NavbarContainer>
                 <NavLogo to="/">
@@ -24,6 +34,11 @@ const Navbar = () => {
                         <NavLinks to="contact">Contato</NavLinks>
                     </NavItem>
                 </NavMenu>
+                <NavBtn>
+                    <NavBtnLink to="/signin">
+                        Contribua
+                    </NavBtnLink>
+                </NavBtn>
             </NavbarContainer>
         </Nav>
     </>
